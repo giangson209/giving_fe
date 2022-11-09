@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppin/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/poppin/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppin/Poppins-Bold.woff2") format("woff2"), url("../fonts/poppin/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppin/Poppins-Medium.woff2") format("woff2"), url("../fonts/poppin/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppin/Poppins-Regular.woff2") format("woff2"), url("../fonts/poppin/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppin/Poppins-Light.woff2") format("woff2"), url("../fonts/poppin/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/*======================================== config =================================*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s all !important;
+}
+a:hover {
+  color: #00c9cb;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+input {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #031322;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Poppins";
+  background: #fff;
+  letter-spacing: -0.25px;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 50px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none !important;
+}
+
+/*======================================== end config =================================*/
+.box-bannerhome {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #E2E2E2;
+}
+
+.slide-banner {
+  max-width: 808px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
