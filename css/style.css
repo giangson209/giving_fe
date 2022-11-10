@@ -1,35 +1,56 @@
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/poppin/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/poppin/Poppins-SemiBold.woff") format("woff");
+  font-family: "Grotesk";
+  src: url("../fonts/grotesk/FamiljenGrotesk-SemiBoldItalic.woff2") format("woff2"), url("../fonts/grotesk/FamiljenGrotesk-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/poppin/Poppins-Bold.woff2") format("woff2"), url("../fonts/poppin/Poppins-Bold.woff") format("woff");
+  font-family: "Grotesk";
+  src: url("../fonts/grotesk/FamiljenGrotesk-Bold.woff2") format("woff2"), url("../fonts/grotesk/FamiljenGrotesk-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/poppin/Poppins-Medium.woff2") format("woff2"), url("../fonts/poppin/Poppins-Medium.woff") format("woff");
+  font-family: "Grotesk";
+  src: url("../fonts/grotesk/FamiljenGrotesk-Medium.woff2") format("woff2"), url("../fonts/grotesk/FamiljenGrotesk-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/poppin/Poppins-Regular.woff2") format("woff2"), url("../fonts/poppin/Poppins-Regular.woff") format("woff");
+  font-family: "Grotesk";
+  src: url("../fonts/grotesk/FamiljenGrotesk-Italic.woff2") format("woff2"), url("../fonts/grotesk/FamiljenGrotesk-Italic.woff") format("woff");
   font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("../fonts/grotesk/FamiljenGrotesk-BoldItalic.woff2") format("woff2"), url("../fonts/grotesk/FamiljenGrotesk-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("../fonts/grotesk/FamiljenGrotesk-SemiBold.woff2") format("woff2"), url("../fonts/grotesk/FamiljenGrotesk-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/poppin/Poppins-Light.woff2") format("woff2"), url("../fonts/poppin/Poppins-Light.woff") format("woff");
-  font-weight: 300;
+  font-family: "Grotesk";
+  src: url("../fonts/grotesk/FamiljenGrotesk-MediumItalic.woff2") format("woff2"), url("../fonts/grotesk/FamiljenGrotesk-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("../fonts/grotesk/FamiljenGrotesk-Regular.woff2") format("woff2"), url("../fonts/grotesk/FamiljenGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -76,14 +97,19 @@ body {
   height: 100%;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Poppins";
+  font-family: "Grotesk";
   background: #fff;
-  letter-spacing: -0.25px;
 }
 
 .container {
-  max-width: 1400px;
-  padding: 0 50px;
+  max-width: 1224px;
+}
+
+.row {
+  margin: 0 -12px;
+}
+.row > div {
+  padding: 0 12px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -106,6 +132,63 @@ time, mark, audio, video {
 }
 
 /*======================================== end config =================================*/
+.content-head .logo {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  z-index: 2;
+}
+.content-head .btn-bar {
+  position: fixed;
+  top: 48px;
+  right: 48px;
+  z-index: 2;
+}
+
+footer {
+  background: #685900;
+  color: #fff;
+  padding: 64px 0 96px 0;
+}
+footer a {
+  color: #fff !important;
+  display: inline-flex;
+  align-items: center;
+}
+footer a svg {
+  margin-left: 8px;
+}
+footer .logo img {
+  max-width: 135px;
+}
+footer ul {
+  list-style: none;
+  max-width: 272px;
+}
+footer ul li {
+  margin-bottom: 4px;
+}
+footer ul li:last-child {
+  margin-bottom: 0;
+}
+footer .copyright {
+  margin-top: 80px;
+}
+
+.title-fter {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: initial;
+  margin-bottom: 16px;
+  min-height: 52px;
+}
+
+.title h2 {
+  font-size: 72px;
+  font-weight: 500;
+}
+
 .box-bannerhome {
   position: relative;
   height: 100vh;
@@ -119,6 +202,264 @@ time, mark, audio, video {
 .slide-banner {
   max-width: 808px;
   margin: 0 auto;
+}
+
+.box-breadcrumbs {
+  padding: 24px 0;
+  background: #E2E2E2;
+}
+.box-breadcrumbs ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box-breadcrumbs ul li {
+  position: relative;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+.box-breadcrumbs ul li:after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -3px;
+  color: #C1C1C1;
+}
+.box-breadcrumbs ul li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+.box-breadcrumbs ul li:last-child:after {
+  display: none;
+}
+.box-breadcrumbs ul li a {
+  color: #C1C1C1;
+}
+.box-breadcrumbs ul li:first-child a {
+  color: #000000;
+}
+
+.box-correlate {
+  padding-top: 88px;
+}
+.box-correlate .title {
+  margin-bottom: 32px;
+}
+
+.desc-corr {
+  max-width: 488px;
+}
+.desc-corr p {
+  margin-bottom: 10px;
+}
+.desc-corr p:last-child {
+  margin-bottom: 0;
+}
+
+.corr-flex {
+  display: flex;
+  margin: 0 -12px;
+  align-items: flex-end;
+}
+.corr-flex .avr {
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%;
+  padding: 0 12px;
+}
+.corr-flex .desc {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 12px;
+  color: #C1C1C1;
+}
+
+.item-founder {
+  display: flex;
+  margin-bottom: 64px;
+}
+.item-founder:last-child {
+  margin-bottom: 0;
+}
+.item-founder .avarta {
+  flex: 0 0 288px;
+  margin-right: 32px;
+}
+.item-founder h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+.item-founder .permistion {
+  font-size: 20px;
+  line-height: initial;
+  padding: 16px 0 32px 0;
+  font-weight: 500;
+}
+
+.box-founder {
+  padding: 160px 0;
+}
+
+.box-member {
+  padding: 0 0 160px 0;
+}
+
+.title-memb {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  position: sticky;
+  top: 20px;
+}
+
+.list-member .col-md-3 {
+  margin-top: 48px;
+}
+.list-member .col-md-3:nth-child(1) {
+  margin-top: 0;
+}
+.list-member .col-md-3:nth-child(2) {
+  margin-top: 0;
+}
+.list-member .col-md-3:nth-child(3) {
+  margin-top: 0;
+}
+.list-member .col-md-3:nth-child(4) {
+  margin-top: 0;
+}
+.list-member .item-member h4 {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.list-member .item-member .per {
+  font-weight: 700;
+  line-height: initial;
+  padding: 4px 0 0 0;
+}
+
+.box-service {
+  padding: 64px 0 96px 0;
+  background: #685900;
+  color: #fff;
+}
+
+.list-service .item-service {
+  margin-bottom: 32px;
+}
+.list-service .item-service:last-child {
+  margin-bottom: 0;
+}
+.list-service .item-service h3 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.box-life {
+  padding: 160px 0 240px 0;
+}
+.box-life .title-life {
+  margin-bottom: 95px;
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.list-gall-life .row > div {
+  margin-bottom: 24px;
+}
+
+.box-banner {
+  position: relative;
+  min-height: 100vh;
+}
+.box-banner .caption-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2e2e2;
+}
+.box-banner .caption-banner h1 {
+  color: #685900;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.box-service-cate {
+  padding: 0 0 160px 0;
+}
+.box-service-cate .col-md-6 {
+  margin-top: 72px;
+}
+
+.item-srv {
+  max-width: 480px;
+}
+.item-srv h3 {
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.item-srv h4 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px 0;
+  text-transform: uppercase;
+}
+.item-srv p {
+  margin-bottom: 10px;
+}
+.item-srv p:last-child {
+  margin-bottom: 0;
+}
+
+.box-step {
+  background: #E2E2E2;
+}
+
+.box-policy {
+  padding: 160px 0;
+}
+
+.txt-pol {
+  max-width: 376px;
+}
+.txt-pol .title-pol {
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: initial;
+}
+.txt-pol .desc {
+  padding: 16px 0 24px 0;
+}
+.txt-pol .view-pol a {
+  display: inline-flex;
+  color: #685900;
+  font-weight: 500;
+  align-items: center;
+}
+
+.box-form {
+  padding: 0 0 240px 0;
+}
+.box-form .title-form {
+  border-top: 2px solid #685900;
+  padding: 24px 0 48px 0;
+}
+.box-form .title-form h3 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: initial;
+  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

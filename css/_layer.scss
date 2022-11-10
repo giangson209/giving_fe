@@ -43,15 +43,18 @@ body {
   height: 100%;
   font-size: 16px;
   line-height: 1.5;
-  font-family: 'Poppins';
+  font-family: 'Grotesk';
   background: #fff;
-  letter-spacing: -0.25px;
 }
 .container {
-  max-width: 1400px;
-  padding: 0 50px;
+  max-width: 1224px;
 }
-
+.row {
+  margin: 0 -12px;
+  >div {
+    padding: 0 12px;
+  }
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -75,3 +78,57 @@ time, mark, audio, video {
 
 /*======================================== end config =================================*/
 
+.content-head {
+  .logo {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+    z-index: 2;
+  }
+  .btn-bar {
+    position: fixed;
+    top: 48px;
+    right: 48px;
+    z-index: 2;
+  }
+}
+
+footer {
+  background: #685900;
+  color: #fff;
+  padding: 64px 0 96px 0;
+  a {
+    color: #fff !important;
+    display: inline-flex;
+    align-items: center;
+    svg {
+      margin-left: 8px;
+    }
+  }
+  .logo {
+    img {
+      max-width: 135px
+    }
+  }
+  ul {
+    list-style: none;
+    max-width: 272px;
+    li {
+      margin-bottom: 4px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 80px;
+  }
+}
+.title-fter {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: initial;
+    margin-bottom: 16px;
+    min-height: 52px;
+}

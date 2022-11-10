@@ -18,4 +18,11 @@
 </head>
 
 <body> 
-   <header></header>
+   <header>
+      <div class="header-top">
+         <div class="content-head">
+            <div class="logo"><a href=""><img src="images/logo-dark.png" class="img-fluid" alt=""></a></div>
+            <div class="btn-bar"><a href="javascript:void(0)"><img src="images/bar.svg" class="img-fluid" alt=""></a></div>
+         </div>
+      </div>
+   </header>

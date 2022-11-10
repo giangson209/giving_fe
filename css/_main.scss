@@ -1,3 +1,9 @@
+.title {
+	h2 {
+		font-size: 72px;
+		font-weight: 500;
+	}
+}
 .box-bannerhome {
 	position: relative;	
 	height: 100vh;
@@ -10,4 +16,253 @@
 .slide-banner {
 	max-width: 808px;
 	margin: 0 auto;
+} 
+.box-breadcrumbs {
+	padding: 24px 0;
+	background: #E2E2E2;
+	ul {
+		list-style: none;
+	    display: flex;
+	    align-items: center;
+	    flex-wrap: wrap;
+	    li {
+	    	position: relative;
+	    	margin-right: 10px;
+	    	padding-right: 10px;
+	    	&:after {
+	    		content: "|";
+	    		position: absolute;
+	    		top: 0;
+	    		right: -3px;
+	    		color: #C1C1C1;
+	    	}
+	    	&:last-child {
+	    		padding-right: 0;
+	    		margin-right: 0;
+	    		&:after {
+	    			display: none;
+	    		}
+	    	}
+	    	a {
+	    		color: #C1C1C1;
+	    	}
+	    	&:first-child {
+	    		a {
+	    			color: #000000;
+	    		}
+	    	}
+	    }
+	}
+}
+.box-correlate {
+	padding-top: 88px;
+	.title {
+		margin-bottom: 32px;
+	}
+}
+.desc-corr {
+	max-width: 488px;
+	p {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.corr-flex {
+	display: flex;
+    margin: 0 -12px;
+    align-items: flex-end;
+    .avr {
+    	flex: 0 0 66.6666%;
+	    max-width: 66.6666%;
+	    padding: 0 12px;
+    }
+    .desc {
+    	flex: 0 0 33.3333%;
+	    max-width: 33.3333%;
+	    padding: 0 12px;
+	    color: #C1C1C1;
+    }
+}
+.item-founder {
+	display: flex;
+	margin-bottom: 64px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.avarta {
+		flex: 0 0 288px;
+		margin-right: 32px;
+	}
+	h4 {
+		font-size: 36px;
+    	font-weight: 400;
+	}
+	.permistion {
+		font-size: 20px;
+	    line-height: initial;
+	    padding: 16px 0 32px 0;
+	    font-weight: 500;
+	}
+}
+.box-founder {
+	padding: 160px 0;
+}
+.box-member {
+	padding: 0 0 160px 0;
+}
+.title-memb {
+	font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    position: sticky;
+    top: 20px;
+}
+.list-member {
+	.col-md-3 {
+		margin-top: 48px;
+	}
+	@for $i from 1 through 4 {
+	  .col-md-3:nth-child(#{$i}) {
+	    margin-top: 0;
+	  }
+	}
+	.item-member {
+		h4 {
+			margin-top: 16px;
+		    font-size: 20px;
+		    font-weight: 500;
+		    line-height: 1.2;
+		}
+		.per {
+			font-weight: 700;
+		    line-height: initial;
+		    padding: 4px 0 0 0;
+		}
+	}
+}
+
+.box-service {
+	padding: 64px 0 96px 0;
+	background: #685900;
+	color: #fff;
+}
+.list-service {
+	.item-service {
+		margin-bottom: 32px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		h3 {
+			font-size: 36px;
+			font-weight: 400;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.box-life {
+	padding: 160px 0 240px 0;
+	.title-life {
+		margin-bottom: 95px;
+		font-size: 48px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+}
+.list-gall-life {
+	.row {
+		>div {
+			margin-bottom: 24px;
+		}
+	}
+}
+.box-banner {
+	position: relative;
+	min-height: 100vh;
+	.caption-banner {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    background: #e2e2e2;
+		h1 {
+			color: #685900;
+			font-size: 80px;
+			font-weight: 500;
+			line-height: 1.1;
+		}
+	}
+}
+
+.box-service-cate {
+	padding: 0 0 160px 0;
+	.col-md-6 {
+		margin-top: 72px;
+	}
+}
+.item-srv {
+	max-width: 480px;
+	h3 {
+		font-size: 48px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	h4 {
+		font-size: 20px;
+		font-weight: 500;
+		padding: 16px 0;
+		text-transform: uppercase;
+	}
+	p {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.box-step {
+	background: #E2E2E2;
+}
+.box-policy {
+	padding: 160px 0;
+}
+.txt-pol {
+	max-width: 376px;
+	.title-pol {
+		font-size: 48px;
+	    font-weight: 500;
+	    text-transform: uppercase;
+	    line-height: initial;
+	}
+	.desc {
+		padding: 16px 0 24px 0;
+	}
+	.view-pol {
+		a {
+			display: inline-flex;
+		    color: #685900;
+		    font-weight: 500;
+		    align-items: center;
+		}
+	}
+}
+.box-form {
+	padding: 0 0 240px 0;
+	.title-form {
+		border-top: 2px solid #685900;
+    	padding: 24px 0 48px 0;
+    	h3 {
+    		font-size: 36px;
+		    font-weight: 400;
+		    line-height: initial;
+		    margin-bottom: 8px;
+    	}
+	}
 }
