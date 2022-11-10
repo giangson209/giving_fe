@@ -1,4 +1,7 @@
 <?php include 'header.php';?>
+<style>
+	footer {display: none;}
+</style>
 <main>
 	<section class="box-bannerhome">
 		<div class="slide-banner">

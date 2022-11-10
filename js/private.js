@@ -21,5 +21,10 @@ $(document).ready(function(){
 		prevArrow: '',
 	}); 
 
+	$('.item-job h3').click(function(e){
+		$(this).toggleClass('active');
+		$(this).next().slideToggle(300);
+	});
+
 })
 
