@@ -34,6 +34,9 @@ input {
 
 html{
   scroll-behavior: smooth;
+  &.open_menu {
+    overflow: hidden;
+  }
 }
 body {
   max-width: 100%;
@@ -131,4 +134,66 @@ footer {
     line-height: initial;
     margin-bottom: 16px;
     min-height: 52px;
+}
+
+.nav-menu {
+  background: #685900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: .4s cubic-bezier(.17,.67,.89,.52) !important;
+  opacity: 0;
+  pointer-events: none;
+  &.open_menu {
+    opacity: 1;
+    pointer-events: unset;
+  }
+  .head-nav {
+    flex: 0 0 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+  }
+}
+.menu-mobile {
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        display: inline-flex;
+        font-size: 72px;
+        font-weight: 500;
+        color: #fff;
+        line-height: initial;
+      }
+    }
+  }
+}
+.social-head {
+  padding-left: 36px;
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

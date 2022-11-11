@@ -11,6 +11,13 @@ $(document).ready(function(){
 	// 	});
 	// }
 
+	$('.btn-bar a').click(function(event) {
+		$('.nav-menu, html').addClass('open_menu');
+	});
+	$('.close-menu a').click(function(event) {
+		$('.nav-menu, html').removeClass('open_menu');
+	});
+
 	$('.slide-banner').slick({ 
 		autoplay:false,
 		arrow:false,

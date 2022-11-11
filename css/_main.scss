@@ -17,7 +17,7 @@
 	max-width: 808px;
 	margin: 0 auto;
 } 
-.box-breadcrumbs {
+.box-breadcrumbs { 
 	padding: 24px 0;
 	background: #E2E2E2;
 	ul {
@@ -26,7 +26,7 @@
 	    align-items: center;
 	    flex-wrap: wrap;
 	    li {
-	    	position: relative;
+	    	position: relative; 
 	    	margin-right: 10px;
 	    	padding-right: 10px;
 	    	&:after {
@@ -56,6 +56,17 @@
 }
 .box-correlate {
 	padding-top: 88px;
+	background: #e2e2e2;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 150px;
+		background: #fff;
+		width: 100%;
+	}
 	.title {
 		margin-bottom: 32px;
 	}
@@ -549,4 +560,119 @@
 }
 .box-strong-title {
 	margin-bottom: 78px;
+}
+
+.box-detail-project {
+	background: #E2E2E2;
+    padding: 96px 0 264px 0;
+    margin-bottom: -168px;
+}
+.title-project-detail {
+	h1 {
+		font-size: 72px;
+	    font-weight: 500;
+	    line-height: initial;
+	    margin-bottom: 24px;
+	}
+	p {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.desc-big {
+	font-size: 36px;
+	line-height: initial;
+}
+.item-detail {
+	margin-bottom: 96px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.caption-images {
+		color: #C1C1C1;
+    	padding: 16px 0;
+	}
+	p {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.gall-detail {
+	.col-md-6 {
+		margin-bottom: 24px;
+	}
+}
+
+.box-other-project {
+	padding: 240px 0;
+}
+
+.other-left {
+	padding:  0 110px 0 0;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.content-other {
+	border-top: 2px solid #685900;
+	padding-top: 24px;
+	.title-other {
+		font-size: 48px;
+		font-weight: 500;
+		text-transform: uppercase;
+		line-height: initial;
+	}
+}
+.list-other {
+	max-width: 168px;
+	margin-left: auto;
+	.item-other {
+		margin-bottom: 48px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		h3 {
+			a {
+				display: block;
+				font-size: 16px;
+				font-weight: normal;
+				color: #C1C1C1;
+				margin-bottom: 16px;
+			}
+		}
+	}
+}
+.other-big {
+	h3 {
+		a {
+			display: block;
+		    font-size: 20px;
+		    font-weight: 500;
+		    text-transform: uppercase;
+		}
+	}
+	.desc {
+		padding: 16px 0;
+	}
+	.view-project {
+		a {
+			color: #685900;
+		    display: inline-flex;
+		    align-items: center;
+		    font-weight: 500;
+		    svg {
+		    	margin-left: 8px;
+		    }
+		}
+	}
+	.avarta {
+		margin-top: 32px;
+	}
 }
